@@ -12,7 +12,7 @@ class MyThread extends Thread {
     }
 }
 
-public class ThreadNames {
+public class threadNames {
 
     public static void main(String[] args) {
 
