@@ -38,7 +38,7 @@ class ColourTask implements Runnable {
     }
 }
 
-public class RandomColour {
+public class RandomColor {
 
     public static void main(String[] args) {
 
