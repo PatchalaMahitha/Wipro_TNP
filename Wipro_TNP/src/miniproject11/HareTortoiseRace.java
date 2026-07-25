@@ -22,13 +22,13 @@ class Hare extends Thread {
 
             System.out.println("Hare: " + distance + " meters");
 
-            // Check whether Tortoise has already won
-            if (Race.tortoiseWon) {
+            // Stop Hare if Tortoise has already won
+            if (HareTortoiseRace.tortoiseWon) {
                 return;
             }
         }
 
-        Race.hareWon = true;
+        HareTortoiseRace.hareWon = true;
         System.out.println("Hare wins the race!");
     }
 }
@@ -45,13 +45,13 @@ class Tortoise extends Thread {
 
             System.out.println("Tortoise: " + distance + " meters");
 
-            // Check whether Hare has already won
-            if (Race.hareWon) {
+            // Stop Tortoise if Hare has already won
+            if (HareTortoiseRace.hareWon) {
                 return;
             }
         }
 
-        Race.tortoiseWon = true;
+        HareTortoiseRace.tortoiseWon = true;
         System.out.println("Tortoise wins the race!");
     }
 }
@@ -66,7 +66,7 @@ public class HareTortoiseRace {
         Hare hare = new Hare();
         Tortoise tortoise = new Tortoise();
 
-        // Set higher priority to Hare
+        // Set priority
         hare.setPriority(Thread.MAX_PRIORITY);
         tortoise.setPriority(Thread.MIN_PRIORITY);
 
@@ -80,9 +80,10 @@ public class HareTortoiseRace {
         tortoise.start();
 
         try {
-            // Wait for both threads to finish
+            // Wait for both threads to complete
             hare.join();
             tortoise.join();
+
         } catch (InterruptedException e) {
             System.out.println("Main thread interrupted");
         }
