@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Forms</title>
+</head>
+
+<body>
+
+<h1 align="center">HTML5 Form Attributes</h1>
+
+
+<div style="border: 2px solid black; padding: 20px; margin: 20px;">
+
+    <h2>Visitor Information</h2>
+
+    <form>
+
+        Email Address:
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required>
+
+        <br><br>
+
+
+        User's Interest:
+
+        <input type="checkbox"
+               name="interest"
+               value="research">
+
+        Research
+
+        <input type="checkbox"
+               name="interest"
+               value="purchase">
+
+        Purchase
+
+        <br><br>
+
+
+        Occupation:
+
+        <select name="occupation" required>
+
+            <option value="">Select One</option>
+            <option>Student</option>
+            <option>Employee</option>
+            <option>Business</option>
+            <option>Teacher</option>
+
+        </select>
+
+        <br><br>
+
+
+        Junk Emails:
+
+        <input type="radio"
+               name="junk"
+               value="yes"
+               required>
+
+        Absolutely
+
+        <input type="radio"
+               name="junk"
+               value="no">
+
+        No way man
+
+        <br><br>
+
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+</div>
+
+
+<div style="border: 2px solid blue; padding: 20px; margin: 20px;">
+
+    <h2>Online Registration</h2>
+
+    <form>
+
+        Username:
+
+        <input
+            type="text"
+            name="username"
+            placeholder="Enter username"
+            required>
+
+        <br><br>
+
+
+        Password:
+
+        <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            required>
+
+        <br><br>
+
+
+        Confirm Password:
+
+        <input
+            type="password"
+            name="confirmPassword"
+            placeholder="Confirm password"
+            required>
+
+        <br><br>
+
+
+        Name:
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required>
+
+        <br><br>
+
+
+        Gender:
+
+        <input type="radio"
+               name="gender"
+               value="male"
+               required>
+
+        Male
+
+        <input type="radio"
+               name="gender"
+               value="female">
+
+        Female
+
+        <br><br>
+
+
+        Address:
+
+        <br>
+
+        <textarea
+            name="address"
+            rows="5"
+            cols="30"
+            placeholder="Enter your address"
+            required></textarea>
+
+        <br><br>
+
+
+        Profession:
+
+        <select name="profession" required>
+
+            <option value="">Select Profession</option>
+            <option>Student</option>
+            <option>Software Engineer</option>
+            <option>Teacher</option>
+            <option>Doctor</option>
+
+        </select>
+
+        <br><br>
+
+
+        <!-- Multiple attribute -->
+
+        Skills:
+
+        <select name="skills" multiple>
+
+            <option>Java</option>
+            <option>Python</option>
+            <option>HTML</option>
+            <option>SQL</option>
+            <option>JavaScript</option>
+
+        </select>
+
+        <br><br>
+
+
+        Resume:
+
+        <input
+            type="file"
+            name="resume"
+            multiple>
+
+        <br><br>
+
+
+        <input type="submit" value="Register">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+</div>
+
+</body>
+</html>

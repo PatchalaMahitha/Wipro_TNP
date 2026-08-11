@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+
+<h1 align="center">Forms</h1>
+
+
+<!-- ================= FORM 1 ================= -->
+
+<div style="border: 2px solid black; padding: 20px; margin: 20px;">
+
+    <h2>Visitor Information</h2>
+
+    <hr>
+
+    <form>
+
+        <label>Email Address:</label>
+        <input type="email" name="email">
+
+        <br><br>
+
+        <label>User's Interest:</label>
+
+        <input type="checkbox" name="interest" value="research">
+        Research
+
+        <input type="checkbox" name="interest" value="purchase">
+        Purchase
+
+        <br><br>
+
+        <label>Occupation:</label>
+
+        <select name="occupation">
+
+            <option>Select One</option>
+            <option>Student</option>
+            <option>Employee</option>
+            <option>Business</option>
+            <option>Teacher</option>
+
+        </select>
+
+        <br><br>
+
+        <label>Want us to send you junk emails?</label>
+
+        <input type="radio" name="junk" value="yes">
+        Absolutely
+
+        <input type="radio" name="junk" value="no">
+        No way man
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</div>
+
+
+<!-- ================= FORM 2 ================= -->
+
+<div style="border: 2px solid blue; padding: 20px; margin: 20px;">
+
+    <h2>Online Registration</h2>
+
+    <form>
+
+        Username:
+        <input type="text" name="username">
+
+        <br><br>
+
+        Password:
+        <input type="password" name="password">
+
+        <br><br>
+
+        Confirm Password:
+        <input type="password" name="confirmPassword">
+
+        <br><br>
+
+        Name:
+        <input type="text" name="name">
+
+        <br><br>
+
+        Gender:
+
+        <input type="radio" name="gender" value="male">
+        Male
+
+        <input type="radio" name="gender" value="female">
+        Female
+
+        <input type="radio" name="gender" value="other">
+        Other
+
+        <br><br>
+
+        Address:
+
+        <br>
+
+        <textarea rows="5" cols="30"></textarea>
+
+        <br><br>
+
+        Profession:
+
+        <select name="profession">
+
+            <option>Select Profession</option>
+            <option>Student</option>
+            <option>Software Engineer</option>
+            <option>Teacher</option>
+            <option>Doctor</option>
+            <option>Business</option>
+
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</div>
+
+</body>
+</html>
