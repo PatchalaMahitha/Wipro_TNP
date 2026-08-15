@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Prompt and Alert</title>
+</head>
+<body>
+
+<script>
+
+    // a. Display today's date
+    let today = new Date();
+
+    alert("Today's date is: " + today.toLocaleDateString());
+
+
+    // b. Get username
+    let username = prompt("Enter your name:");
+
+    alert("Hello " + username);
+
+
+    // c. Get two numbers and display their sum
+    let num1 = Number(prompt("Enter first number:"));
+    let num2 = Number(prompt("Enter second number:"));
+
+    let sum = num1 + num2;
+
+    alert("Sum = " + sum);
+
+</script>
+
+</body>
+</html>

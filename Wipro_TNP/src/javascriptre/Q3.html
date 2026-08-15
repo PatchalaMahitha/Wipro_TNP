@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Validation</title>
+
+    <script>
+        function validatePassword() {
+
+            var password = document.getElementById("password").value;
+
+            // 6 to 20 characters
+            // At least one digit
+            // At least one uppercase letter
+            // At least one lowercase letter
+
+            var pattern = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z]).{6,20}$/;
+
+            if (!pattern.test(password)) {
+                alert("Password must be 6 to 20 characters and contain at least one numeric digit, one uppercase letter and one lowercase letter.");
+
+                document.getElementById("password").focus();
+
+                return false;
+            }
+
+            alert("Password is valid");
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+<h2>Password Validation</h2>
+
+<form onsubmit="return validatePassword()">
+
+    Password:
+    <input type="password" id="password">
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>

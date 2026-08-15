@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 10</title>
+
+    <style>
+        .box {
+            width: 400px;
+            padding: 30px;
+            margin: 50px auto;
+
+            border: 30px solid transparent;
+
+            border-image-source: url("image.jpg");
+            border-image-slice: 30;
+            border-image-width: 30px;
+        }
+
+        .repeat {
+            border-image-repeat: repeat;
+        }
+
+        .stretch {
+            border-image-repeat: stretch;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box repeat">
+        Welcome to CSS World - Repeat
+    </div>
+
+    <div class="box stretch">
+        Welcome to CSS World - Stretch
+    </div>
+
+</body>
+</html>
