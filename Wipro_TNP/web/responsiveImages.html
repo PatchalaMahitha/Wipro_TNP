@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Images</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .responsive-img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Responsive Image</h2>
+
+<picture>
+    <source media="(max-width: 500px)" srcset="images/img1.jpg">
+    <source media="(max-width: 800px)" srcset="images/img2.jpg">
+    <source media="(max-width: 1100px)" srcset="images/img3.jpg">
+
+    <img src="images/img4.jpg" class="responsive-img">
+</picture>
+
+</body>
+</html>
