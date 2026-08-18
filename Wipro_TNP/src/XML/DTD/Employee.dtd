@@ -1,0 +1,4 @@
+<!ELEMENT Employee (Name, Company, Mobile)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Company (#PCDATA)>
+<!ELEMENT Mobile (#PCDATA)>
